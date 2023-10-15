@@ -34,6 +34,8 @@
       ansible.builtin.shell: npm install
       args:
         chdir: /app
+
+
     - name: Copying Service File and starting the service
       ansible.builtin.copy:
       src: catalogue.service
