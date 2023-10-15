@@ -41,10 +41,10 @@
         src: catalogue.service
         dest: /etc/systemd/system/cart.service
 
-    - name: Enabling and restarting catalogue Server
+    - name: Enabling and restarting cart Server
       ansible.builtin.systemd:
         state: restarted
-        name: catalogue
+        name: cart
         enabled: true
         daemon_reload: true
 
