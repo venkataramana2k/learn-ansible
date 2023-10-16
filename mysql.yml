@@ -3,7 +3,7 @@
   become: yes
   tasks:
     - name: Disabling Mysql default version
-      ansible.builtin.shell: yum module disable mysql
+      ansible.builtin.shell: yum module disable mysql -y
 
     - name: Setting up the MySQL5.7 repo file
       ansible.builtin.copy:
