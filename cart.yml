@@ -14,11 +14,6 @@
       ansible.builtin.user:
         name: roboshop
 
-    - name: Remove the Directory
-      ansible.builtin.file:
-        path: /app
-        state: absent
-
     - name: Create a directory
       ansible.builtin.file:
         path: /app
@@ -37,7 +32,7 @@
 
     - name: Copying Service File and starting the service
       ansible.builtin.copy:
-        src: catalogue.service
+        src: cart.service
         dest: /etc/systemd/system/cart.service
 
     - name: Enabling and restarting cart Server
