@@ -52,7 +52,7 @@
         state: latest
 
     - name: Loading Schema
-      ansible.builtin.shell: mongo --host mongodb-dev.sadguru.shop </app/schema/catalogue.js
+      ansible.builtin.shell: mongo --host mongodb-dev.venkata.cloud </app/schema/catalogue.js
 
     - name: Enabling and restarting catalogue Server
       ansible.builtin.systemd:
