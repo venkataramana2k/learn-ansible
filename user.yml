@@ -50,7 +50,7 @@
         state: latest
 
     - name: Loading Schema
-      ansible.builtin.shell: mongo --host mongodb-dev.sadguru.shop </app/schema/user.js
+      ansible.builtin.shell: mongo --host mongodb-dev.venkata.cloud </app/schema/user.js
 
     - name: Enabling and restarting user Server
       ansible.builtin.systemd:
