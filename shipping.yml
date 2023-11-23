@@ -44,7 +44,7 @@
         state: latest
 
     - name: Loading mysql Schema
-      ansible.builtin.shell:  mysql -h mysql-dev.sadguru.shop -uroot -pRoboShop@1 </app/schema/shipping.sql
+      ansible.builtin.shell:  mysql -h mysql-dev.venkata.cloud -uroot -pRoboShop@1 </app/schema/shipping.sql
 
     - name: Enabling and restarting shipping Server
       ansible.builtin.systemd:
